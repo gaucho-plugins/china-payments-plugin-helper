@@ -16,6 +16,8 @@ if( isset( $_GET[ 'update_credentials_stripe' ] ) ) {
     ChinaPayments\Settings::instance()->update( [
       'stripe_test_public_key'    => '',
       'stripe_test_secret_key'    => '',
+      'stripe_live_public_key'    => '',
+      'stripe_live_secret_key'    => '',      
     ] );
     exit;
   });
